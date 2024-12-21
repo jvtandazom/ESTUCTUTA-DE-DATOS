@@ -1,0 +1,109 @@
+// Clase para representar un Círculo
+public class Circulo
+{
+    // Campo privado para almacenar el radio del círculo
+    private double radio;
+
+    // Propiedad para encapsular el acceso al radio
+    public double Radio
+    {
+        get { return radio; }
+        set { radio = value > 0 ? value : 0; } // Validación: el radio debe ser positivo
+    }
+
+    // Constructor para inicializar el radio del círculo
+    public Circulo(double radio)
+    {
+        Radio = radio;
+    }
+
+    // Método para calcular el área del círculo
+    // Devuelve un valor double y utiliza la fórmula: Área = π * radio^2
+    public double CalcularArea()
+    {
+        return Math.PI * Math.Pow(radio, 2);
+    }
+
+    // Método para calcular el perímetro del círculo
+    // Devuelve un valor double y utiliza la fórmula: Perímetro = 2 * π * radio
+    public double CalcularPerimetro()
+    {
+        return 2 * Math.PI * radio;
+    }
+}
+
+// Clase para representar un Rectángulo
+public class Rectangulo
+{
+    // Campos privados para almacenar la base y la altura del rectángulo
+    private double baseRectangulo;
+    private double altura;
+
+    // Propiedades para encapsular el acceso a los campos
+    public double BaseRectangulo
+    {
+        get { return baseRectangulo; }
+        set { baseRectangulo = value > 0 ? value : 0; } // Validación: la base debe ser positiva
+    }
+
+    public double Altura
+    {
+        get { return altura; }
+        set { altura = value > 0 ? value : 0; } // Validación: la altura debe ser positiva
+    }
+
+    // Constructor para inicializar la base y la altura del rectángulo
+    public Rectangulo(double baseRectangulo, double altura)
+    {
+        BaseRectangulo = baseRectangulo;
+        Altura = altura;
+    }
+
+    // Método para calcular el área del rectángulo
+    // Devuelve un valor double y utiliza la fórmula: Área = base * altura
+    public double CalcularArea()
+    {
+        return baseRectangulo * altura;
+    }
+
+    // Método para calcular el perímetro del rectángulo
+    // Devuelve un valor double y utiliza la fórmula: Perímetro = 2 * (base + altura)
+    public double CalcularPerimetro()
+    {
+        return 2 * (baseRectangulo + altura);
+    }
+}
+
+// Clase para representar un Cuadrado
+public class Cuadrado
+{
+    // Campo privado para almacenar el lado del cuadrado
+    private double lado;
+
+    // Propiedad para encapsular el acceso al lado
+    public double Lado
+    {
+        get { return lado; }
+        set { lado = value > 0 ? value : 0; } // Validación: el lado debe ser positivo
+    }
+
+    // Constructor para inicializar el lado del cuadrado
+    public Cuadrado(double lado)
+    {
+        Lado = lado;
+    }
+
+    // Método para calcular el área del cuadrado
+    // Devuelve un valor double y utiliza la fórmula: Área = lado^2
+    public double CalcularArea()
+    {
+        return Math.Pow(lado, 2);
+    }
+
+    // Método para calcular el perímetro del cuadrado
+    // Devuelve un valor double y utiliza la fórmula: Perímetro = 4 * lado
+    public double CalcularPerimetro()
+    {
+        return 4 * lado;
+    }
+}
